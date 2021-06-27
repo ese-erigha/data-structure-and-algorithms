@@ -1,0 +1,50 @@
+{
+  "name": "data-structure-and-algorithms",
+  "version": "1.0.0",
+  "description": "Data structure and algorithm solutions",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint '*/**/*.{js,ts}' --quiet --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts}": [
+      "eslint --fix"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eseerigha/data-structure-and-algorithms.git"
+  },
+  "keywords": [
+    "data structure",
+    "algorithms"
+  ],
+  "author": "Ese Erigha",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eseerigha/data-structure-and-algorithms/issues"
+  },
+  "homepage": "https://github.com/eseerigha/data-structure-and-algorithms#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.28.0",
+    "@typescript-eslint/parser": "^4.28.0",
+    "eslint": "^7.29.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-prettier": "^3.4.0",
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
+    "prettier": "^2.3.2"
+  },
+  "dependencies": {
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.4"
+  }
+}
