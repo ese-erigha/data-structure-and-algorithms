@@ -3,7 +3,7 @@
  */
 export const countDigits = (num: number): number => {
     if (Number.isNaN(num)) return 0;
-    if (num < 0) throw new Error('Unsupported');
+    if (num < 0) throw new Error('Negative number not accepted');
     if (num < 10) return 1;
 
     let temp = num;
