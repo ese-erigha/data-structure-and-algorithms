@@ -14,7 +14,7 @@ class Reptile {
     ];
 
     shuffle(): void {
-        for (let i = this.reptiles.length - 1; i > 0; i-=1) {
+        for (let i = this.reptiles.length - 1; i > 0; i -= 1) {
             const j: number = Math.floor(Math.random() * (i + 1));
             const temp: string = this.reptiles[i];
             this.reptiles[i] = this.reptiles[j];
@@ -29,7 +29,7 @@ class Reptile {
             throw new Error(`Can't ensure no dupes for that count`);
         }
 
-        for (let i: number = 0; i < count; i+=1) {
+        for (let i: number = 0; i < count; i += 1) {
             if (allowDupes) {
                 // Dupes are cool, so let's just pull random reptiles
                 selected.push(this.reptiles[Math.floor(Math.random() * this.reptiles.length)]);
