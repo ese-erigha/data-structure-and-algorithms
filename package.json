@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint '*/**/*.{js,ts}' --quiet --fix",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "husky": {
     "hooks": {
@@ -32,6 +32,7 @@
   },
   "homepage": "https://github.com/eseerigha/data-structure-and-algorithms#readme",
   "devDependencies": {
+    "@types/jest": "^26.0.23",
     "@typescript-eslint/eslint-plugin": "^4.28.0",
     "@typescript-eslint/parser": "^4.28.0",
     "eslint": "^7.29.0",
@@ -40,8 +41,10 @@
     "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-prettier": "^3.4.0",
     "husky": "^6.0.0",
+    "jest": "^27.0.5",
     "lint-staged": "^11.0.0",
-    "prettier": "^2.3.2"
+    "prettier": "^2.3.2",
+    "ts-jest": "^27.0.3"
   },
   "dependencies": {
     "ts-node": "^10.0.0",
